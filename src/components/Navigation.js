@@ -4,15 +4,15 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import Navigation from './Navigation';
-
 // ----------------------------------------------
-// Header
+// Navigation
 // ----------------------------------------------
-export default ({ siteTitle }) => (
-  <header className="header">
-    <Link className="header__title" to="/">{siteTitle}</Link>
-
-    <Navigation />
-  </header>
+export default () => (
+  <nav>
+    <ul className="header__list">
+      <li><Link to="/">Stories</Link></li>
+      <li><Link to="/">Style Guide</Link></li>
+      <li><span className="popup__open">Contact</span></li>
+    </ul>
+  </nav>
 );
