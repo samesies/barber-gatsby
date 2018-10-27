@@ -1,0 +1,83 @@
+//----------------------------------------------
+// Imports
+//---------------------------------------------- 
+@import '../../styles/tools/_config';
+@import '../../styles/tools/_extends-type';
+@import '../../styles/tools/_extends';
+@import '../../styles/tools/_mixins-type';
+
+//----------------------------------------------
+// Subscribe
+//---------------------------------------------- 
+.subscribe {
+  margin-bottom: 3em;
+
+  &__container {
+    @extend %auto-margin;
+
+    max-width: $mq-small;
+  }
+
+  &__title {
+    @extend %font-header;
+    @extend %text-center;
+
+    display: block;
+
+    font-size: 1.25em;
+  }
+
+  &__text {
+    @extend %text-center;
+
+    margin: {
+      top: 0.75em;
+      bottom: 1.75em;
+    }
+  }
+
+  &__input {
+    width: 45%;
+    margin-right: 0.5em;
+
+    input {
+      color: $color-white;
+      border: 2px solid rgba($color-white, 0.6);
+
+      &:hover,
+      &:focus {
+        border-color: $color-white;
+      }
+    }
+  }
+
+  &__btn {
+    @include btn-split($color-white, $color-white, 2px);
+
+    display: inline-block;
+
+    input {
+      padding: {
+        right: 1em;
+        left: 1em;
+      }
+      margin-bottom: 0;
+
+      font-size: 1em;
+      color: $color-white;
+      border: 0;
+    }
+  }
+
+  &__error {
+    @extend %font-header;
+    @extend %text-center;
+
+    margin: {
+      top: 0.75em;
+      bottom: 0;
+    }
+
+    color: $color-alpha;
+  }
+}

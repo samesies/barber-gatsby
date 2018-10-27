@@ -1,0 +1,22 @@
+//----------------------------------------------
+// Imports
+//---------------------------------------------- 
+@import '../../styles/tools/_config';
+@import '../../styles/tools/_extends';
+
+//----------------------------------------------
+// Social
+//---------------------------------------------- 
+.social {
+  @extend %flex-center;
+  @extend %no-list-style;
+
+  & > *:not(:last-child) {
+    margin-right: 0.75em;
+  }
+
+  a {
+    font-size: 1.25em;
+    color: $color-white;
+  }
+}

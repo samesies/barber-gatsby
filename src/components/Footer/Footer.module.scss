@@ -1,0 +1,55 @@
+//----------------------------------------------
+// Imports
+//---------------------------------------------- 
+@import '../../styles/tools/_config';
+@import '../../styles/tools/_extends-type';
+@import '../../styles/tools/_extends';
+
+//----------------------------------------------
+// Footer
+//---------------------------------------------- 
+.footer {
+  color: $color-white;
+  background-color: $color-black;
+  border-top: $border;
+
+  &__container {
+    margin-top: 3em;
+  }
+
+  &__tags {
+    @extend %flex-center;
+    @extend %no-list-style;
+
+    flex-wrap: wrap;
+
+    & > * {
+      margin-bottom: 2em;
+
+      &:not(:last-child) {
+        margin-right: 1em;
+      }
+    }
+  }
+
+  &__link {
+    font-size: $font-small;
+    color: $color-white;
+    transition: color 200ms ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-grey;
+    }
+  }
+}
+
+//----------------------------------------------
+// Flex based sticky footer
+//---------------------------------------------- 
+main {
+  position: relative;
+
+  margin-top: $header-height;
+}

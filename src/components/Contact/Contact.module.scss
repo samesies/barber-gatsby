@@ -1,0 +1,80 @@
+//----------------------------------------------
+// Imports
+//---------------------------------------------- 
+@import '../../styles/tools/_config';
+@import '../../styles/tools/_extends-type';
+@import '../../styles/tools/_extends';
+
+//----------------------------------------------
+// Contact
+//---------------------------------------------- 
+.contact {
+  @extend %flex-center;
+
+  height: 100vh;
+
+  &__container {
+    @extend %box-shadow;
+
+    width: 100%;
+    max-width: $max-width--lg;
+
+    background-color: $color-white;
+
+    @media (min-width: $mq-small) {
+      display: flex;
+
+      & > * {
+
+        &:first-child {
+          flex-basis: 55%;
+          max-width: 55%;
+        }
+
+        &:last-child {
+          flex-basis: 45%;
+          max-width: 45%;
+        }
+      }
+    }
+
+    @media (min-width: $mq-med) {
+      min-height: 34em;
+      width: 80%;
+    }
+
+    @media (min-width: $mq-xlarge) {
+      width: 65%;
+    }
+
+    .js-popup-open & {
+      animation: scale 300ms ease-in-out both;
+    }
+  }
+
+  &__img {
+    display: none;
+
+    @media (min-width: $mq-small) {
+      position: relative;
+
+      display: block;
+
+      background-color: $color-lightgrey;
+    }
+  }
+
+  &__content {
+    @extend %flex-center;
+
+    flex-direction: column;
+
+    & > * {
+      width: 100%;
+    }
+  }
+
+  &__mast {
+    @extend %text-center;
+  }
+}

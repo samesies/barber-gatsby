@@ -1,0 +1,84 @@
+//----------------------------------------------
+// Imports
+//---------------------------------------------- 
+@import '../../styles/tools/_config';
+
+//----------------------------------------------
+// Popup
+//---------------------------------------------- 
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9;
+
+  height: 100vh;
+  width: 100%;
+  padding: {
+    right: 1em;
+    left: 1em;
+  }
+
+  visibility: hidden;
+  background-color: rgba($color-black, 0.9);
+  opacity: 0;
+  transition: opacity 600ms ease-in-out;
+
+  &__open {
+    z-index: 9999;
+
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__close {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    z-index: $z-999;
+    
+    height: 2.25rem;
+    width: 2rem;
+
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: $mq-small) {
+      top: 1.5em;
+      right: 1.5em;
+    }
+  }
+
+  &__exit {
+    position: absolute;
+    top: 1em;
+    z-index: 1;
+
+    display: block;
+   
+    cursor: pointer;
+
+    &:after, 
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      
+      display: block;
+      height: 1px;
+      width: 1.855555rem;
+
+      background-color: $color-white;
+      zoom: 1;
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+  }
+}

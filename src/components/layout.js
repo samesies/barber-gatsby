@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
-import Header from './Header';
-import Footer from './Footer';
-import './layout.css';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
+
+import '../styles/app.scss';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -37,10 +38,10 @@ const Layout = ({ children }) => (
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;
