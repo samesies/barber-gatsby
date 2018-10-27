@@ -2,7 +2,6 @@
 // Imports
 // ----------------------------------------------
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Social from './Social';
 
@@ -23,7 +22,7 @@ export default () => (
       <hr className="sep--white"/>
 
       <div className="footer__container">
-        
+
 
         <Social />
       </div>
