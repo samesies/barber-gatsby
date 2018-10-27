@@ -32,7 +32,7 @@ export default class Header extends Component {
           <nav>
             <ul className={styles.header__list}>
               <li><Link to="/">Stories</Link></li>
-              <li><Link to="/">Style Guide</Link></li>
+              <li><Link to="/style-guide">Style Guide</Link></li>
               <li><span className={styles.header__toggle} onClick={this.toggleContact}>Contact</span></li>
             </ul>
           </nav>

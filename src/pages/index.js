@@ -1,13 +1,46 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import Layout from '../components/layout'
-import Image from '../components/image'
+import DefaultLayout from '../templates/Default';
 
-const IndexPage = () => (
-  <Layout>
-    <h1>Hi people</h1>
-  </Layout>
-)
+export const IndexPage = () => (
+  <DefaultLayout>
+    <div class="posts">
+      <div class="grid-xlarge">
+        <div class="posts__container" itemscope itemtype="http://schema.org/Blog" data-columns>
 
-export default IndexPage
+        </div>
+      </div>
+    </div>
+  </DefaultLayout>
+);
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    site {
+      siteMetadata {
+        ...sidebarFragment
+      }
+    }
+    allMarkdownRemark(
+        limit: 1000,
+        filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } },
+        sort: { order: DESC, fields: [frontmatter___date] }
+      ){
+      edges {
+        node {
+          fields {
+            slug
+            categorySlug
+          }
+          frontmatter {
+            title
+            date
+            category
+            description
+          }
+        }
+      }
+    }
+  }
+`;

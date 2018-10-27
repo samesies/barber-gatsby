@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
-import Header from './Header/Header';
-import Footer from './Footer/Footer';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 import '../styles/app.scss';
 
-const Layout = ({ children }) => (
+const DefaultLayout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -40,8 +40,8 @@ const Layout = ({ children }) => (
   />
 );
 
-Layout.propTypes = {
+DefaultLayout.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-export default Layout;
+export default DefaultLayout;
