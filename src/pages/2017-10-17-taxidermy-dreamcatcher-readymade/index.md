@@ -2,7 +2,7 @@
 title: "Taxidermy Dreamcatcher Readymade"
 date: 2017-10-17
 description: 
-image: /assets/images/placeholder-6.jpg
+image: ../../images/placeholder-6.jpg
 author: Thomas Vaeth
 tags: 
   - Dummy Text
@@ -13,13 +13,13 @@ Hammock drinking vinegar readymade roof party, portland small batch occupy freeg
 
 Readymade fanny pack seitan, yr austin chicharrones health goth hella listicle gluten-free kale chips. Listicle authentic semiotics, snackwave af bicycle rights meditation whatever gentrify. Authentic semiotics unicorn, lo-fi VHS before they sold out palo santo gentrify stumptown hoodie. Austin four loko cornhole bespoke beard adaptogen next level semiotics.
 
-![Placeholder](/assets/images/placeholder-28.jpg#full)
+![Placeholder](../../images/placeholder-28.jpg#full)
 
 Venmo knausgaard try-hard, taiyaki four loko thundercats letterpress distillery slow-carb shabby chic 90's literally. Cronut cray lumbersexual, venmo mixtape live-edge neutra ethical chambray post-ironic adaptogen semiotics. Cray fingerstache shoreditch godard gentrify readymade austin waistcoat. Tilde truffaut letterpress, asymmetrical snackwave artisan sartorial tote bag DIY. Fixie twee yuccie, small batch hashtag locavore green juice yr 90's brunch chambray leggings.
 
 Umami leggings glossier fashion axe, seitan listicle hashtag migas vegan truffaut. Meh neutra knausgaard, man bun adaptogen bitters taiyaki VHS flannel YOLO gentrify hammock kombucha. Vegan succulents iPhone banh mi thundercats waistcoat. Kickstarter everyday carry whatever, forage keffiyeh blue bottle vaporware listicle kogi godard woke. 
 
-![Placeholder](/assets/images/placeholder-24.jpg)
+![Placeholder](../../images/placeholder-24.jpg)
 
 Health goth vape williamsburg master cleanse tumblr leggings, banh mi four loko narwhal lomo hammock trust fund. Tumeric meh post-ironic twee tilde. Fixie flexitarian church-key mustache brooklyn pinterest. Mlkshk cliche fam lumbersexual listicle four dollar toast raw denim ethical. Schlitz +1 forage subway tile vegan asymmetrical, ugh drinking vinegar letterpress succulents.
 

@@ -2,7 +2,7 @@
 title: "Unicorn Echo Park"
 date: 2017-10-11
 description: 
-image: /assets/images/placeholder-10.jpg
+image: ../../images/placeholder-10.jpg
 author: Thomas Vaeth
 tags: 
   - Mixtape
@@ -15,7 +15,7 @@ Taxidermy tumblr forage neutra. Af skateboard hoodie scenester, vape fanny pack 
 
 Distillery biodiesel unicorn food truck echo park master cleanse. Gentrify mumblecore twee synth, farm-to-table gochujang umami health goth narwhal ugh letterpress coloring book. Mumblecore kogi microdosing tumeric blog gluten-free affogato four loko, pour-over hexagon. Schlitz banjo man bun twee. Unicorn echo park twee asymmetrical gentrify deep v trust fund kitsch squid.
 
-![Placeholder](/assets/images/placeholder-26.jpg#full)
+![Placeholder](../../images/placeholder-26.jpg#full)
 
 Asymmetrical listicle glossier, bitters distillery biodiesel farm-to-table migas aesthetic woke sriracha. Tbh PBR&B stumptown kickstarter vinyl YOLO mlkshk everyday carry asymmetrical lumbersexual. 
 

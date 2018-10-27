@@ -2,7 +2,7 @@
 title: "Disrupt Raw Denim"
 date: 2017-10-10
 description: 
-image: /assets/images/placeholder-14.jpg
+image: ../../images/placeholder-14.jpg
 author: Thomas Vaeth
 tags: 
   - Squid
@@ -19,7 +19,7 @@ Cred bespoke wayfarers af, retro vaporware PBR&B waistcoat everyday carry cornho
 ## Four Dollar Toast
 Snackwave keytar mixtape art party, typewriter banh mi YOLO brunch butcher franzen retro hashtag cray. Activated charcoal tote bag tousled, selvage organic edison bulb +1 craft beer locavore swag. 3 wolf moon photo booth bespoke narwhal swag drinking vinegar skateboard flexitarian woke butcher gochujang celiac kitsch. Dreamcatcher deep v hexagon sustainable seitan portland DIY post-ironic. Sartorial aesthetic umami, next level snackwave intelligentsia hot chicken salvia fanny pack poke vice 8-bit. Fam locavore hashtag wolf dreamcatcher actually blog gastropub migas church-key mixtape 90's truffaut trust fund. 
 
-![Placeholder](/assets/images/placeholder-26.jpg)
+![Placeholder](../../images/placeholder-26.jpg)
 
 Vegan hammock green juice, migas post-ironic master cleanse cold-pressed wolf kogi celiac four dollar toast brunch hot chicken hell of. Palo santo activated charcoal humblebrag leggings banh mi freegan fingerstache aesthetic cronut 3 wolf moon. La croix fingerstache twee affogato actually. Crucifix mlkshk tacos chambray church-key etsy. Woke artisan 3 wolf moon, mumblecore pour-over chillwave messenger bag knausgaard master cleanse. Tote bag 90's put a bird on it meh occupy banh mi. Tofu meditation jianbing normcore vexillologist knausgaard williamsburg gochujang retro drinking vinegar. 
 

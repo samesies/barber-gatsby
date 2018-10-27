@@ -2,7 +2,7 @@
 title: "Single-origin Coffee"
 date: 2017-10-13
 description: 
-image: /assets/images/placeholder-21.jpg
+image: ../../images/placeholder-21.jpg
 author: Thomas Vaeth
 tags: 
   - Mixtape
@@ -26,7 +26,7 @@ Knausgaard readymade williamsburg tote bag taxidermy, DIY meditation copper mug.
 
 Sartorial af ennui bitters knausgaard, leggings kickstarter slow-carb chia sustainable hexagon. Prism 3 wolf moon occupy ramps wayfarers tumblr narwhal 90’s. Woke chambray church-key before they sold out, gochujang fashion axe franzen banh mi pinterest forage kinfolk.
 
-![Placeholder](/assets/images/placeholder-18.jpg)
+![Placeholder](../../images/placeholder-18.jpg)
 
 Meh food truck tofu succulents, literally waistcoat skateboard poke pop-up cold-pressed put a bird on it cliche umami cornhole kale chips. Man braid 8-bit irony selvage, butcher blog everyday carry. Af meggings tacos ugh la croix skateboard. Biodiesel paleo prism kombucha seitan drinking vinegar. Single-origin coffee lo-fi cardigan, poutine roof party bitters taxidermy post-ironic umami vaporware. Austin edison bulb leggings cliche. Literally church-key umami, vegan irony art party vinyl edison bulb selfies lumbersexual deep v fingerstache flexitarian.
 
@@ -36,7 +36,7 @@ Meh food truck tofu succulents, literally waistcoat skateboard poke pop-up cold-
 #### Subway tile
 Slow-carb cornhole crucifix thundercats intelligentsia. Trust fund bushwick la croix, 8-bit hell of ennui chicharrones vegan master cleanse tilde subway tile bespoke roof party. Next level celiac bushwick coloring book subway tile. Lyft knausgaard four loko, twee sustainable narwhal letterpress PBR&amp;B kombucha paleo mixtape helvetica. Photo booth gastropub yr sartorial kitsch godard, etsy hella literally kale chips. 
 
-![Placeholder](/assets/images/placeholder-24.jpg#full)
+![Placeholder](../../images/placeholder-24.jpg#full)
 
 Mixtape hella readymade selvage taxidermy cornhole umami four dollar toast, yr seitan blog. Butcher whatever copper mug, keffiyeh authentic humblebrag irony distillery williamsburg fingerstache helvetica keytar glossier.
 

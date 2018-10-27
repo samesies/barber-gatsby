@@ -2,7 +2,7 @@
 title: "Lumbersexual"
 date: 2017-10-09
 description: 
-image: /assets/images/placeholder-3.jpg
+image: ../../images/placeholder-3.jpg
 author: Thomas Vaeth
 tags:
   - Mixtape
@@ -11,11 +11,11 @@ tags:
 ---
 Umami thundercats 90's chia tumblr. [Dreamcatcher](http://thomasvaeth.com/) cronut neutra forage lo-fi. +1 man braid single-origin coffee affogato kinfolk selfies cornhole lumbersexual mlkshk. Meditation you probably haven't heard of them kogi wayfarers ethical bushwick hell of. 
 
-![Placeholder](/assets/images/placeholder-26.jpg#full)
+![Placeholder](../../images/placeholder-26.jpg#full)
 
 Cray beard succulents mlkshk woke. Hashtag pour-over meh disrupt raw denim narwhal iceland taxidermy helvetica vice. Venmo succulents next level cred, street art messenger bag sartorial sriracha paleo affogato echo park hella normcore seitan. 
 
-![Placeholder](/assets/images/placeholder-27.jpg#full)
+![Placeholder](../../images/placeholder-27.jpg#full)
 
 Bicycle rights gochujang mumblecore, woke subway tile selvage microdosing kombucha PBR&B shoreditch readymade XOXO wayfarers mlkshk schlitz. Church-key hell of squid art party man bun, heirloom coloring book narwhal shaman umami raw denim leggings tbh. Cred bespoke wayfarers af, retro vaporware PBR&B waistcoat everyday carry cornhole fam narwhal. Chartreuse plaid art party, glossier prism affogato retro hexagon letterpress bitters organic tbh photo booth keytar skateboard. Farm-to-table YOLO ugh four dollar toast brooklyn palo santo brunch lyft lomo cred bitters actually pabst air plant mustache. Prism iPhone health goth chambray meh affogato.
 

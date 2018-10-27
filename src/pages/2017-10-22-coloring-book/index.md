@@ -2,7 +2,7 @@
 title: "Coloring Book"
 date: 2017-10-22
 description: 
-image: /assets/images/placeholder-8.jpg
+image: ../../images/placeholder-8.jpg
 author: Thomas Vaeth
 tags: 
   - Squid
@@ -15,7 +15,7 @@ YOLO cold-pressed cred activated charcoal pabst hexagon VHS cornhole brunch, tbh
 
 Hammock whatever paleo, crucifix affogato vice actually vape dreamcatcher franzen fixie hella tofu everyday carry. Keytar gluten-free VHS, wolf scenester swag roof party listicle. Bespoke pabst VHS prism, raclette neutra normcore brunch slow-carb tote bag artisan. Organic DIY venmo, af next level plaid fashion axe 90's activated charcoal.
 
-![Placeholder](/assets/images/placeholder-30.jpg#full)
+![Placeholder](../../images/placeholder-30.jpg#full)
 
 Ramps master cleanse normcore affogato selvage, squid readymade craft beer listicle. Deep v coloring book four dollar toast, quinoa brooklyn echo park sartorial ethical irony keytar health goth activated charcoal yuccie af. Before they sold out pug humblebrag lomo, banjo food truck cray. 
 
@@ -29,6 +29,6 @@ Artisan kogi poke woke chambray fanny pack. Lo-fi man braid put a bird on it sho
 
 Cloud bread trust fund intelligentsia VHS actually, glossier health goth mustache kombucha adaptogen salvia slow-carb activated charcoal man braid. Listicle enamel pin wolf neutra.
 
-![Placeholder](/assets/images/placeholder-19.jpg)
+![Placeholder](../../images/placeholder-19.jpg)
 
 Banh mi snackwave tilde shoreditch fam truffaut dreamcatcher bitters authentic. Dreamcatcher hella +1 schlitz, fixie hexagon selvage. Live-edge listicle schlitz, squid art party gluten-free skateboard 90's put a bird on it. Austin four loko street art typewriter, artisan fixie lumbersexual 8-bit vexillologist. Yuccie jianbing asymmetrical humblebrag retro roof party messenger bag tilde quinoa. Flexitarian hella aesthetic neutra lyft copper mug typewriter gluten-free lumbersexual synth pour-over. Cold-pressed butcher portland banjo tote bag raw denim. Occupy butcher cardigan, +1 before they sold out next level tumblr VHS. Hexagon before they sold out cliche godard skateboard ramps poutine franzen thundercats 8-bit pitchfork jean shorts bitters gochujang banh mi. Man braid iPhone humblebrag YOLO. Vinyl man bun cronut tumblr migas quinoa plaid ugh selfies. Chartreuse letterpress trust fund glossier waistcoat +1 pabst four loko taxidermy skateboard. Ennui unicorn poutine photo booth iceland mumblecore cronut banjo VHS keffiyeh irony next level brooklyn schlitz gastropub. Jean shorts tilde glossier, activated charcoal wayfarers vegan occupy forage squid +1 yuccie.

@@ -2,7 +2,7 @@
 title: "Polaroid Williamsburg"
 date: 2017-10-23
 description: 
-image: /assets/images/placeholder-9.jpg
+image: ../../images/placeholder-9.jpg
 author: Thomas Vaeth
 tags: 
   - Dummy Text
@@ -24,7 +24,7 @@ Etsy squid occupy pop-up. Polaroid +1 everyday carry, kogi chillwave tacos racle
 ### Subway tile
 Knausgaard readymade williamsburg tote bag taxidermy, DIY meditation copper mug. Farm-to-table [street art][#] fixie, chambray vice literally four loko vaporware. Pickled taxidermy freegan, affogato pinterest sriracha vexillologist narwhal pour-over. Man braid food truck celiac +1 bicycle rights, semiotics kogi fixie biodiesel woke raw denim quinoa ugh selfies williamsburg. Sartorial af ennui bitters knausgaard, leggings kickstarter slow-carb chia sustainable hexagon. Prism 3 wolf moon occupy ramps wayfarers tumblr narwhal 90’s. Woke chambray church-key before they sold out, gochujang fashion axe franzen banh mi pinterest forage kinfolk.
 
-![Placeholder](/assets/images/placeholder-2.jpg)
+![Placeholder](../../images/placeholder-2.jpg)
 
 Meh food truck tofu succulents, literally waistcoat skateboard poke pop-up cold-pressed put a bird on it cliche umami cornhole kale chips. Man braid 8-bit irony selvage, butcher blog everyday carry. Af meggings tacos ugh la croix skateboard. Biodiesel paleo prism kombucha seitan drinking vinegar. Single-origin coffee lo-fi cardigan, poutine roof party bitters taxidermy post-ironic umami vaporware. Austin edison bulb leggings cliche. Literally church-key umami, vegan irony art party vinyl edison bulb selfies lumbersexual deep v fingerstache flexitarian.
 

@@ -6,28 +6,25 @@ import DefaultLayout from '../templates/Default';
 
 export default class IndexPage extends React.Component {
   render() {
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const posts = get(this, 'props.data.allMarkdownRemark.edges').map(({ node }) => (
+      <article className="posts__post" itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting" key={node.fields.slug}>
+        <Link className="posts__link" to={node.fields.slug} itemProp="url">
+          <div>
+            <h2 className="posts__text">
+              <strong itemProp="name">{node.frontmatter.title}</strong> — <span itemProp="description" dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+            </h2>
+          </div>
+        </Link>
+      </article>
+    ));
 
     return (
       <DefaultLayout>
         <div className="posts">
           <div className="grid-xlarge">
-            <div className="posts__container" itemScope itemType="http://schema.org/Blog" data-columns>
+            <div className="posts__container" itemScope itemType="http://schema.org/Blog">
             
-              {posts.map(({ node }) => {
-                const title = get(node, 'frontmatter.title') || node.fields.slug
-                return (
-                  <div key={node.fields.slug}>
-                    <h3>
-                      <Link to={node.fields.slug}>
-                        {title}
-                      </Link>
-                    </h3>
-                    <small>{node.frontmatter.date}</small>
-                    <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                  </div>
-                )
-              })}
+              {posts}
 
             </div>
           </div>
@@ -53,7 +50,6 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
             title
           }
         }

@@ -2,7 +2,7 @@
 title: "Beard"
 date: 2017-10-16
 description: 
-image: /assets/images/placeholder-7.jpg
+image: ../../images/placeholder-7.jpg
 author: Thomas Vaeth
 tags: 
   - Squid
@@ -11,7 +11,7 @@ tags:
 ---
 Mlkshk cronut try-hard, microdosing poke man bun kinfolk normcore intelligentsia YOLO helvetica. Dreamcatcher hell of lumbersexual enamel pin intelligentsia green juice you probably haven't heard of them hexagon pitchfork 3 wolf moon blue bottle single-origin coffee cronut brunch. 
 
-![Placeholder](/assets/images/placeholder-25.jpg)
+![Placeholder](../../images/placeholder-25.jpg)
 
 Taxidermy tumblr forage neutra. Af skateboard hoodie scenester, vape fanny pack etsy. 
 

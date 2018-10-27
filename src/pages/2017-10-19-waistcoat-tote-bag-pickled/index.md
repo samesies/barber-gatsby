@@ -2,7 +2,7 @@
 title: "Waistcoat Tote Bag Pickled"
 date: 2017-10-19
 description: 
-image: /assets/images/placeholder-4.jpg
+image: ../../images/placeholder-4.jpg
 author: Thomas Vaeth
 tags: 
   - Dummy Text
@@ -19,6 +19,6 @@ Intelligentsia farm-to-table shabby chic XOXO normcore. Forage yr brooklyn, YOLO
 
 Cronut waistcoat tote bag pickled, narwhal yr tofu health goth neutra poke. Literally church-key pabst vaporware pop-up YOLO butcher seitan master cleanse VHS activated charcoal. Normcore williamsburg tousled waistcoat irony, affogato man braid photo booth. Iceland narwhal fam tote bag meh iPhone keytar taxidermy franzen ugh readymade hell of hella selfies. Squid lumbersexual food truck, jianbing readymade pitchfork neutra selfies before they sold out poutine shoreditch banjo vegan. Cardigan chicharrones lo-fi adaptogen flexitarian bitters hexagon tattooed neutra. 
 
-![Placeholder](/assets/images/placeholder-28.jpg)
+![Placeholder](../../images/placeholder-28.jpg)
 
 Chambray distillery twee fanny pack typewriter humblebrag, raw denim pok pok poutine authentic art party cold-pressed VHS. Twee readymade literally VHS, craft beer farm-to-table yuccie food truck XOXO organic listicle single-origin coffee DIY. Umami palo santo godard kombucha.
