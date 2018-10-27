@@ -2,7 +2,7 @@
 title: "Beard"
 date: 2017-10-16
 description: 
-image: ../../images/placeholder-7.jpg
+image: "../../images/placeholder-7.jpg"
 author: Thomas Vaeth
 tags: 
   - Squid

@@ -2,7 +2,7 @@
 title: "Unicorn Echo Park"
 date: 2017-10-11
 description: 
-image: ../../images/placeholder-10.jpg
+image: "../../images/placeholder-10.jpg"
 author: Thomas Vaeth
 tags: 
   - Mixtape

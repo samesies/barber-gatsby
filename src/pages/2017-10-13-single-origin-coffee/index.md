@@ -2,7 +2,7 @@
 title: "Single-origin Coffee"
 date: 2017-10-13
 description: 
-image: ../../images/placeholder-21.jpg
+image: "../../images/placeholder-21.jpg"
 author: Thomas Vaeth
 tags: 
   - Mixtape

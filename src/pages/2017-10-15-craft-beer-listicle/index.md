@@ -2,7 +2,7 @@
 title: "Craft Beer Listicle"
 date: 2017-10-15
 description: 
-image: ../../images/placeholder-16.jpg
+image: "../../images/placeholder-16.jpg"
 author: Thomas Vaeth
 tags: 
   - Mixtape

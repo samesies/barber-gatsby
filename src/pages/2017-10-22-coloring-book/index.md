@@ -2,7 +2,7 @@
 title: "Coloring Book"
 date: 2017-10-22
 description: 
-image: ../../images/placeholder-8.jpg
+image: "../../images/placeholder-8.jpg"
 author: Thomas Vaeth
 tags: 
   - Squid
