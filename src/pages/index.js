@@ -1,43 +1,60 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
+import get from 'lodash/get';
 
 import DefaultLayout from '../templates/Default';
 
-export const IndexPage = () => (
-  <DefaultLayout>
-    <div class="posts">
-      <div class="grid-xlarge">
-        <div class="posts__container" itemscope itemtype="http://schema.org/Blog" data-columns>
+export default class IndexPage extends React.Component {
+  render() {
+    const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
+    return (
+      <DefaultLayout>
+        <div className="posts">
+          <div className="grid-xlarge">
+            <div className="posts__container" itemScope itemType="http://schema.org/Blog" data-columns>
+            
+              {posts.map(({ node }) => {
+                const title = get(node, 'frontmatter.title') || node.fields.slug
+                return (
+                  <div key={node.fields.slug}>
+                    <h3>
+                      <Link to={node.fields.slug}>
+                        {title}
+                      </Link>
+                    </h3>
+                    <small>{node.frontmatter.date}</small>
+                    <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                  </div>
+                )
+              })}
+
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </DefaultLayout>
-);
+      </DefaultLayout>
+    );
+  }
+};
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query {
     site {
       siteMetadata {
-        ...sidebarFragment
+        title
+        description
       }
     }
-    allMarkdownRemark(
-        limit: 1000,
-        filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } },
-        sort: { order: DESC, fields: [frontmatter___date] }
-      ){
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
+          excerpt
           fields {
             slug
-            categorySlug
           }
           frontmatter {
+            date(formatString: "DD MMMM, YYYY")
             title
-            date
-            category
-            description
           }
         }
       }

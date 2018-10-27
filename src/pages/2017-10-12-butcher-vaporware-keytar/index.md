@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Butcher Vaporware Keytar"
 date: 2017-10-12
 description: 

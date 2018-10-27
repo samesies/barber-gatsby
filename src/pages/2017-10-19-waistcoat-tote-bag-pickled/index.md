@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Waistcoat Tote Bag Pickled"
 date: 2017-10-19
 description: 

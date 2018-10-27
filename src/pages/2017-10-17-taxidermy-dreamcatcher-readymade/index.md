@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Taxidermy Dreamcatcher Readymade"
 date: 2017-10-17
 description: 

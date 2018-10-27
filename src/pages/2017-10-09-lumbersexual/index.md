@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Lumbersexual"
 date: 2017-10-09
 description: 

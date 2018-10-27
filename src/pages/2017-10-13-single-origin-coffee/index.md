@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Single-origin Coffee"
 date: 2017-10-13
 description: 

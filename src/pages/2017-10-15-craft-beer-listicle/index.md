@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Craft Beer Listicle"
 date: 2017-10-15
 description: 

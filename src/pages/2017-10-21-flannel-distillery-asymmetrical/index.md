@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Flannel Distillery Asymmetrical"
 date: 2017-10-21
 description: 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Polaroid Williamsburg"
 date: 2017-10-23
 description: 

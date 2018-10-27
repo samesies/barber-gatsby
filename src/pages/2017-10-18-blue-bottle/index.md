@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Blue Bottle"
 date: 2017-10-18
 description: 

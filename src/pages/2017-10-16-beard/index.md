@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Beard"
 date: 2017-10-16
 description: 

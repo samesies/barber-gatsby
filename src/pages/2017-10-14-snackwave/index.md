@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Snackwave"
 date: 2017-10-14
 description: 
