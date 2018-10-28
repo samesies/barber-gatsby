@@ -23,13 +23,12 @@ const DefaultLayout = ({ children }) => (
     render={data => (
       <>
         <Helmet
+          htmlAttributes={{ lang: 'en' }}
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: data.site.siteMetadata.description }
           ]}
-        >
-          <html lang="en" />
-        </Helmet>
+        />
         <Header siteTitle={data.site.siteMetadata.title} />
         <main className="💈">
           {children}

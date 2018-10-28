@@ -8,31 +8,7 @@
 //----------------------------------------------
 // Post
 //---------------------------------------------- 
-.post {
-
-  &__img {
-    height: 18em;
-    padding: 1em;
-
-    @media (min-width: $mq-small) {
-      height: 36em;
-      padding: 2em;
-    }
-
-    @media (min-width: $mq-med) {
-      height: calc(100vh - 3em);
-      min-height: 36em;
-    }
-
-    & > * {
-      position: relative;
-
-      height: 100%;
-      width: 100%;
-
-      background-color: $color-lightgrey;
-    }
-  }
+.page {
 
   &__content {
     border-top: $border;
@@ -202,62 +178,4 @@
       }
     }
   }
-
-  // &__social {
-  //   @extend %flex-center;
-  //   @extend %no-list-style;
-
-  //   margin: {
-  //     top: 2em;
-  //     bottom: 0;
-  //     left: 0;
-  //   }
-
-  //   @media (min-width: $mq-med) {
-  //     margin-top: 3em;
-  //   }
-
-  //   @media (min-width: $mq-xlarge) {
-  //     margin-top: 4em;
-  //   }
-
-  //   & > * {
-  //     &:not(:last-child) {
-  //       margin-right: 0.75em;
-  //     }
-  //   }
-
-  //   a {
-  //     font-size: 1.1em;
-  //     color: $color-darkgrey;
-  //   }
-  // }
-
-  // &__author {
-  //   @extend %font-header;
-  //   @extend %font-size;
-
-  //   display: block;
-
-  //   a {
-  //     color: $color-black;
-  //     transition: color 200ms ease-in-out;
-
-  //     &:hover,
-  //     &:active,
-  //     &:focus {
-  //       color: darken($color-black, 5);
-  //     }
-  //   }
-  // }
-
-  // &__bio {
-  //   @extend %font-size;
-
-  //   margin-bottom: 0;
-  // }
-
-  // &__comments {
-  //   border-top: $border;
-  // }
 }

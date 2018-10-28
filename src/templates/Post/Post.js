@@ -1,13 +1,14 @@
-import React, { Component } from 'react'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
-import get from 'lodash/get'
+import React, { Component } from 'react';
+import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
+import get from 'lodash/get';
 
 import DefaultLayout from '../Default';
+import Title from '../../components/Title/Title';
 
 import styles from './Post.module.scss';
 
-class BlogPostTemplate extends Component {
+export default class PostLayout extends Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
@@ -16,19 +17,12 @@ class BlogPostTemplate extends Component {
     return (
       <DefaultLayout location={this.props.location}>
         <Helmet
-          htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
         <div className={styles.post}>
           <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
-            <div className={`${styles.post__header} section-padding--double`}>
-              <div className="grid-small">
-                <h2 itemProp="name headline">{post.frontmatter.title}</h2>
-
-                <time className={styles.post__date} dateTime="" itemProp="datePublished">{post.frontmatter.date}</time>
-              </div>
-            </div>
+            <Title title={post.frontmatter.title} date={post.frontmatter.date}/>
 
             <div className={styles.post__img}>
               <div>
@@ -46,12 +40,10 @@ class BlogPostTemplate extends Component {
       </DefaultLayout>
     )
   }
-}
-
-export default BlogPostTemplate;
+};
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query PostBySlug($slug: String!) {
     site {
       siteMetadata {
         title
@@ -69,4 +61,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

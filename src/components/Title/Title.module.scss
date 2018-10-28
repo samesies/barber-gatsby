@@ -1,0 +1,23 @@
+//----------------------------------------------
+// Imports
+//---------------------------------------------- 
+@import '../../styles/tools/_config';
+@import '../../styles/tools/_extends-type';
+
+//----------------------------------------------
+// Title
+//---------------------------------------------- 
+.title {
+  @extend %text-center;
+
+  border-bottom: $border;
+
+  &__date {
+    @extend %font-header;
+
+    display: block;
+    margin-top: 0.25em;
+
+    font-size: $font-xsmall;
+  }
+}
