@@ -117,6 +117,14 @@
       }
     }
 
+    pre {
+      margin-bottom: 1.5rem;
+
+      @media (min-width: $mq-med) {
+        min-width: 110%;
+      }
+    }
+
     a {
       color: $color-black;
       border-bottom: 2px solid $color-grey;

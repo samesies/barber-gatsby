@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
@@ -30,10 +31,19 @@ const DefaultLayout = ({ children }) => (
           ]}
         />
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main className="💈">
-          {children}
-        </main>
-        <Footer />
+        <PageTransition
+          transitionStyles={{
+            entering: { opacity: 0 },
+            entered: { opacity: 1 },
+            exiting: { opacity: 0 }
+          }}
+          transitionTime={600}
+        >
+          <main className="💈">
+            {children}
+          </main>
+          <Footer />
+        </PageTransition>
       </>
     )}
   />

@@ -10,6 +10,30 @@
 //---------------------------------------------- 
 .page {
 
+  &__img {
+    height: 18em;
+    padding: 1em;
+
+    @media (min-width: $mq-small) {
+      height: 36em;
+      padding: 2em;
+    }
+
+    @media (min-width: $mq-med) {
+      height: calc(100vh - 3em);
+      min-height: 36em;
+    }
+
+    & > * {
+      position: relative;
+
+      height: 100%;
+      width: 100%;
+
+      background-color: $color-lightgrey;
+    }
+  }
+
   &__content {
     border-top: $border;
   }
@@ -90,6 +114,14 @@
     blockquote {
       p {
         margin-bottom: 0;
+      }
+    }
+
+    pre {
+      margin-bottom: 1.5rem;
+
+      @media (min-width: $mq-med) {
+        min-width: 110%;
       }
     }
 

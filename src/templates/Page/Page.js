@@ -21,6 +21,17 @@ export default class PageLayout extends Component {
           <div>
             <Title title={this.props.title} />
 
+            {
+            this.props.featuredImage ?
+              <div className={styles.page__img}>
+                <div>
+                  <figure className="absolute-bg" style={{ backgroundImage: `url(${this.props.featuredImage})` }}></figure>
+                </div>
+              </div>
+            :
+              ''
+            }
+
             <div className={`${styles.page__content} section-padding`}>
               <div className="grid">
                 <div className={styles.page__markdown}>

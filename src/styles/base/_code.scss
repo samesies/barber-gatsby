@@ -31,14 +31,6 @@ pre {
     }
   }
 
-  #markdown & {
-    margin-bottom: 1.5rem;
-
-    @media (min-width: $mq-med) {
-      min-width: 110%;
-    }
-  }
-
   code {
     padding: 0;
   }

@@ -8,7 +8,7 @@ import styles from './Title.module.scss';
 // ----------------------------------------------
 // Title
 // ----------------------------------------------
-export default (props) => {
+export default props => {
   let content;
 
   if (props.title && props.date) {

@@ -5,11 +5,13 @@ import React from 'react';
 
 import PageLayout from '../templates/Page/Page';
 
+import featuredImage from '../images/placeholder-18.jpg';
+
 // ----------------------------------------------
 // Style Guide
 // ----------------------------------------------
 export default () => (
-  <PageLayout title="Style Guide">
+  <PageLayout title="Style Guide" featuredImage={featuredImage}>
     <p>My name is Thomas Vaeth and this is Barber. <span role="img" aria-label="barber">💈</span> Barber is a minimal blog theme with a masonry grid layout and infinite scroll. <a href="http://samesies.io" target="_blank" rel="noopener noreferrer">Samesies</a> builds themes for Ghost, WordPress, and Jekyll and they are only available through ThemeForest.</p>
 
     <hr/>
@@ -46,25 +48,23 @@ export default () => (
 
     <hr/>
 
-    {/*
     <pre>
     <code>
-    code {
-      padding: 0.25em 0.5em;
+{`code {
+  padding: 0.25em 0.5em;
 
-      color: $color-black;
-      background: $color-lightgrey;
-    }
+  color: $color-black;
+  background: $color-lightgrey;
+}`}
     </code>
     </pre>
-    */}
 
     <hr/>
 
-    <img src="/assets/images/placeholder-18.jpg" alt="Grid"/>
+    <img src={featuredImage} alt="Grid"/>
     <p>You can <code>use inline code</code> and append <code>#full</code> to the end of an image URL for full width images.</p>
 
-    <img src="/assets/images/placeholder-18.jpg#full" alt="Full"/>
+    <img src={`${featuredImage}#full`} alt="Full"/>
 
     <hr/>
 

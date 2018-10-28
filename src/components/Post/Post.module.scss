@@ -14,12 +14,6 @@
     display: block;
 
     color: $color-black;
-
-    &:hover {
-      .posts__img {
-        transform: translate3d(0, -10px, 0);
-      }
-    }
   }
 
   &__img {
@@ -27,6 +21,10 @@
 
     background-color: $color-lightgrey;
     transition: transform 400ms ease-in-out;
+
+    &:hover {
+      transform: translate3d(0, -10px, 0);
+    }
   }
 
   &__text {

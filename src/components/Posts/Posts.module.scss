@@ -35,5 +35,19 @@
       right: -1em;
       left: -1em;
     }
+
+    & > article {
+      @media (max-width: $mq-med) {
+        width: 100%;
+      }
+
+      @media (min-width: $mq-med) and (max-width: $mq-xlarge) {
+        width: 50%;
+      }
+
+      @media (min-width: $mq-xlarge) {
+        width: 1 / 3 * 100%;
+      }
+    }
   }
 }

@@ -2,6 +2,7 @@
 // Imports
 // ----------------------------------------------
 import React from 'react';
+import Masonry from 'react-masonry-component';
 
 import Post from '../Post/Post';
 
@@ -16,11 +17,16 @@ export default props => {
   return (
     <div className={styles.posts}>
       <div className="grid-xlarge">
-        <div className={styles.posts__container} itemScope itemType="http://schema.org/Blog">
+        <Masonry 
+          className={styles.posts__container} 
+          options={{ transitionDuration: 0 }}
+          itemScope 
+          itemType="http://schema.org/Blog"
+        >
         
           {posts}
 
-        </div>
+        </Masonry>
       </div>
     </div>
   );

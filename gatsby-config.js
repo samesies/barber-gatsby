@@ -4,6 +4,7 @@ module.exports = {
     description: 'Barber is a blog theme for Gatsby built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.'
   },
   plugins: [
+    'gatsby-plugin-page-transitions',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-sharp',
