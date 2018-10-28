@@ -33,6 +33,12 @@ module.exports = {
               linkImagesToOriginal: false
             }
           },
+          {
+            resolve: 'gatsby-remark-responsive-iframe',
+            options: {
+              wrapperStyle: 'margin-bottom: 1.5rem'
+            },
+          },
           'gatsby-remark-copy-linked-files'
         ],
       },

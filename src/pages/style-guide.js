@@ -68,15 +68,21 @@ export default () => (
 
     <hr/>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XFYWazblaUA" frameBorder="0" allowFullScreen></iframe>
+    <div className="flex-vid">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/XFYWazblaUA" frameBorder="0" allowFullScreen />
+    </div>
 
     <hr/>
 
-    <iframe src="https://player.vimeo.com/video/189919038?title=0&byline=0&portrait=0" width="640" height="640" frameBorder="0" allowFullScreen></iframe>
+    <div className="flex-vid">
+      <iframe src="https://player.vimeo.com/video/189919038?title=0&byline=0&portrait=0" width="640" height="640" frameBorder="0" allowFullScreen />
+    </div>
 
     <hr/>
 
-    <iframe height="400" scrolling="no" title="Flexbox Flex-Grow Mast" src="//codepen.io/thomasvaeth/embed/qmbKVq/?height=265&theme-id=0&default-tab=result&embed-version=2" frameBorder="no" allowtransparency="true" allowFullScreen style={{ width: '100%' }}></iframe>
+    <div className="flex-vid">
+      <iframe height="400" scrolling="no" title="Flexbox Flex-Grow Mast" src="//codepen.io/thomasvaeth/embed/qmbKVq/?height=265&theme-id=0&default-tab=result&embed-version=2" frameBorder="no" allowtransparency="true" allowFullScreen style={{ width: '100%' }} />
+    </div>
 
     <hr/>
 
