@@ -1,0 +1,37 @@
+//----------------------------------------------
+// Imports
+//---------------------------------------------- 
+@import '../../styles/tools/_config';
+@import '../../styles/tools/_extends-type';
+
+//----------------------------------------------
+// Post
+//---------------------------------------------- 
+.post {
+  padding: 2em 1em;
+
+  &__link {
+    display: block;
+
+    color: $color-black;
+
+    &:hover {
+      .posts__img {
+        transform: translate3d(0, -10px, 0);
+      }
+    }
+  }
+
+  &__img {
+    margin-bottom: 1em;
+
+    background-color: $color-lightgrey;
+    transition: transform 400ms ease-in-out;
+  }
+
+  &__text {
+    @extend %font-size;
+
+    font-weight: 400;
+  }
+}

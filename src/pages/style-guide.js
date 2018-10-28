@@ -69,13 +69,13 @@ export default () => (
     <hr/>
 
     <div className="flex-vid">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/XFYWazblaUA" frameBorder="0" allowFullScreen />
+      <iframe width="560" height="315" title="The Shape of Water Trailer" src="https://www.youtube.com/embed/XFYWazblaUA" frameBorder="0" allowFullScreen />
     </div>
 
     <hr/>
 
     <div className="flex-vid">
-      <iframe src="https://player.vimeo.com/video/189919038?title=0&byline=0&portrait=0" width="640" height="640" frameBorder="0" allowFullScreen />
+      <iframe width="640" height="640" title="Unsatisfying" src="https://player.vimeo.com/video/189919038?title=0&byline=0&portrait=0" frameBorder="0" allowFullScreen />
     </div>
 
     <hr/>

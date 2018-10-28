@@ -14,13 +14,13 @@ export default (props) => {
   if (props.title && props.date) {
     content = (
       <div>
-        <h2 itemProp="name headline">{props.title}</h2>
+        <h2 className={styles.title__header} itemProp="name headline">{props.title}</h2>
         <time className={styles.title__date} dateTime="" itemProp="datePublished">{props.date}</time>
       </div>
     );
   } else {
     content = (
-      <h2>{props.title}</h2>
+      <h2 className={styles.title__header}>{props.title}</h2>
     );
   }
 

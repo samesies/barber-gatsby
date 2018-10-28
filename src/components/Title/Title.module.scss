@@ -12,6 +12,18 @@
 
   border-bottom: $border;
 
+  &__header {
+    $fontSize: 2em;
+
+    font-family: $font-post;
+    font-size: $fontSize;
+    line-height: 1.4;
+
+    @media (min-width: $mq-xlarge) {
+      font-size: $fontSize + 0.25em;
+    }
+  }
+
   &__date {
     @extend %font-header;
 
