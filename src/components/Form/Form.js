@@ -13,6 +13,7 @@ export default class Form extends Component {
     super(props);
 
     this.state = {};
+
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -34,7 +35,6 @@ export default class Form extends Component {
         'Content-Type': 'application/json'
       },
     }).then(response => response.json()).then(json => {
-      console.log(json);
       if (json.code === 200) {
         this.setState({});
       } else {
@@ -52,7 +52,6 @@ export default class Form extends Component {
       <form 
         className={styles.form} 
         onSubmit={this.handleSubmit}
-        ref={form => this.form = form}
       >
         <div className={styles.form__subcontainer}>
           <div>
@@ -100,7 +99,7 @@ export default class Form extends Component {
 
         <div className={styles.form__submit}>
           <div className={styles.form__btn}>
-            <input type="submit" value="Send"/>
+            <input type="submit" value="Send" />
           </div>
         </div>
 
