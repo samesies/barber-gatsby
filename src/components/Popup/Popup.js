@@ -18,28 +18,24 @@ export default class Popup extends Component {
   }
 
   componentDidMount() {
-    document.addEventListener('keyup', e => {
-      if (this.state.popup && e.which === 27) {
-        this.togglePopup();
-      }
-    });
-
-    this.popup.addEventListener('click', e => {
-      if (!this.popupContainer.contains(e.target)) {
-        this.togglePopup();
+    document.addEventListener('keyup', event => {
+      if (this.state.popup && event.which === 27) {
+        this.togglePopup(event);
       }
     });
   }
 
-  togglePopup() {
-    this.setState(prevState => ({
-      popup: !prevState.popup
-    }));
+  togglePopup(event) {
+    if (!this.popupContainer.contains(event.target)) {
+      this.setState(prevState => ({
+        popup: !prevState.popup
+      }));
+    }
   }
 
   render() {
     return (
-      <section className={`${styles.popup} ${this.state.popup ? styles.popup__open : ''}`} ref={popup => this.popup = popup}>
+      <section className={`${styles.popup} ${this.state.popup ? styles.popup__open : ''}`} onClick={e => this.togglePopup(e)}>
         <div className={styles.popup__close}>
           <div className={styles.popup__exit} />
         </div>

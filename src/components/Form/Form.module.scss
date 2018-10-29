@@ -72,5 +72,6 @@
     background: $color-lightgrey;
     border-left: 2px solid $color-black;
     opacity: 0;
+    transition: opacity 600ms ease-in-out;
   }
 }

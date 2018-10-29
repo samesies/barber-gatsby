@@ -19,8 +19,8 @@ export default class Header extends Component {
     this.toggleContact = this.toggleContact.bind(this);
   }
 
-  toggleContact() {
-    this.popup.togglePopup();
+  toggleContact(event) {
+    this.popup.togglePopup(event);
   }
 
   render() {
@@ -33,7 +33,7 @@ export default class Header extends Component {
             <ul className={styles.header__list}>
               <li><Link to="/">Stories</Link></li>
               <li><Link to="/style-guide">Style Guide</Link></li>
-              <li><span className={styles.header__toggle} onClick={this.toggleContact}>Contact</span></li>
+              <li><span className={styles.header__toggle} onClick={e => this.toggleContact(e)}>Contact</span></li>
             </ul>
           </nav>
         </header>

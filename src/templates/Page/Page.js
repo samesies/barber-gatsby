@@ -25,7 +25,7 @@ export default class PageLayout extends Component {
             this.props.featuredImage ?
               <div className={styles.page__img}>
                 <div>
-                  <figure className="absolute-bg" style={{ backgroundImage: `url(${this.props.featuredImage})` }}></figure>
+                  <figure className="absolute-bg" style={{ backgroundImage: `url(${this.props.featuredImage})` }} />
                 </div>
               </div>
             :
