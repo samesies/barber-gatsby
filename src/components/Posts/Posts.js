@@ -13,6 +13,10 @@ import styles from './Posts.module.scss';
 // ----------------------------------------------
 export default props => {
   const posts = props.posts.map(({ node }) => <Post node={node} key={node.fields.slug} />);
+  const loadMore = props.loadMore ?
+    <span className={styles.posts__next} onClick={props.onClick}>Load More Articles</span> :
+    <span className={styles.posts__disabled}>No More Articles</span>
+  ;
 
   return (
     <div className={styles.posts}>
@@ -23,11 +27,12 @@ export default props => {
           itemScope 
           itemType="http://schema.org/Blog"
         >
-        
           {posts}
-
         </Masonry>
+        <div className={styles.posts__pagination}>
+          {loadMore}
+        </div>
       </div>
     </div>
   );
-};
+}

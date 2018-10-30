@@ -1,21 +1,40 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
-import get from 'lodash/get';
 
 import DefaultLayout from '../templates/Default';
 import Posts from '../components/Posts/Posts';
 
 export default class IndexPage extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      postsLoaded: 12
+    };
+
+    this.onClick = this.onClick.bind(this);
+    this.posts = this.props.data.allMarkdownRemark.edges;
+  }
+
+  onClick() {
+    this.setState(prevState => ({
+      postsLoaded: prevState.postsLoaded + 12
+    }));
+  }
+
   render() {
-    const posts = get(this, 'props.data.allMarkdownRemark.edges');
+    const posts = this.posts.slice(0, this.state.postsLoaded);
 
     return (
       <DefaultLayout>
-        <Posts posts={posts} />
+        <Posts 
+          posts={posts} 
+          onClick={this.onClick} 
+          loadMore={posts.length < this.posts.length} />
       </DefaultLayout>
     );
   }
-};
+}
 
 export const pageQuery = graphql`
   query {
@@ -46,4 +65,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

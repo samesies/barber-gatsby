@@ -10,6 +10,8 @@
 .post {
   padding: 2em 1em;
 
+  animation: fade-up ease-in-out 800ms both;
+
   &__link {
     display: block;
 
@@ -31,5 +33,20 @@
     @extend %font-size;
 
     font-weight: 400;
+  }
+}
+
+//----------------------------------------------
+// Fade Up
+//---------------------------------------------- 
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
