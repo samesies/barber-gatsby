@@ -1,7 +1,13 @@
+// ----------------------------------------------
+// Imports
+// ----------------------------------------------
 import React from 'react'
 
 import DefaultLayout from '../templates/Default';
 
+// ----------------------------------------------
+// 404
+// ----------------------------------------------
 const NotFoundPage = () => (
   <DefaultLayout>
     <h1>NOT FOUND</h1>

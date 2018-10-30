@@ -24,11 +24,18 @@
   opacity: 0;
   transition: opacity 600ms ease-in-out;
 
-  &__open {
+  &__opening {
     z-index: 9999;
 
     visibility: visible;
     opacity: 1;
+  }
+
+  &__closing {
+    z-index: 9999;
+
+    visibility: visible;
+    opacity: 0;
   }
 
   &__close {

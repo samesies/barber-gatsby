@@ -1,3 +1,6 @@
+// ----------------------------------------------
+// Imports
+// ----------------------------------------------
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
@@ -8,6 +11,9 @@ import Title from '../../components/Title/Title';
 
 import styles from './Page.module.scss';
 
+// ----------------------------------------------
+// Page Layout
+// ----------------------------------------------
 export default class PageLayout extends Component {
   render() {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
@@ -54,4 +60,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

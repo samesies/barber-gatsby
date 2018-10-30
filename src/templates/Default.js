@@ -1,3 +1,6 @@
+// ----------------------------------------------
+// Imports
+// ----------------------------------------------
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
@@ -9,6 +12,9 @@ import Footer from '../components/Footer/Footer';
 
 import '../styles/app.scss';
 
+// ----------------------------------------------
+// Default Layout
+// ----------------------------------------------
 const DefaultLayout = ({ children }) => (
   <StaticQuery
     query={graphql`

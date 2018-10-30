@@ -46,10 +46,6 @@
     @media (min-width: $mq-xlarge) {
       width: 65%;
     }
-
-    .js-popup-open & {
-      animation: scale 300ms ease-in-out both;
-    }
   }
 
   &__img {

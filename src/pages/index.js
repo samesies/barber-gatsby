@@ -1,9 +1,15 @@
+// ----------------------------------------------
+// Imports
+// ----------------------------------------------
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 
 import DefaultLayout from '../templates/Default';
 import Posts from '../components/Posts/Posts';
 
+// ----------------------------------------------
+// Index
+// ----------------------------------------------
 export default class IndexPage extends Component {
   constructor(props) {
     super(props);

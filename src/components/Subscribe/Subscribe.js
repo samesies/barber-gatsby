@@ -81,7 +81,7 @@ export default class Subscribe extends Component {
             </div>
           </form>
 
-          <p className={styles.subscribe__error} style={{ display: this.state.error ? 'block' : 'none '}}>{this.state.error}</p>
+          <p className={styles.subscribe__error} style={{ display: this.state.error ? 'block' : 'none' }}>{this.state.error}</p>
         </div>
       </div>
     );

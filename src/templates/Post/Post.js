@@ -1,3 +1,6 @@
+// ----------------------------------------------
+// Imports
+// ----------------------------------------------
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
@@ -8,6 +11,9 @@ import Title from '../../components/Title/Title';
 
 import styles from './Post.module.scss';
 
+// ----------------------------------------------
+// Post Layout
+// ----------------------------------------------
 export default class PostLayout extends Component {
   render() {
     const post = this.props.data.markdownRemark;
@@ -40,7 +46,7 @@ export default class PostLayout extends Component {
       </DefaultLayout>
     )
   }
-};
+}
 
 export const pageQuery = graphql`
   query PostBySlug($slug: String!) {
@@ -61,4 +67,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

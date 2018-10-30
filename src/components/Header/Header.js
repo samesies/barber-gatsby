@@ -19,8 +19,8 @@ export default class Header extends Component {
     this.toggleContact = this.toggleContact.bind(this);
   }
 
-  toggleContact(event) {
-    this.popup.togglePopup(event);
+  toggleContact() {
+    this.popup.togglePopup();
   }
 
   render() {
@@ -39,7 +39,7 @@ export default class Header extends Component {
         </header>
 
         <Popup ref={popup => this.popup = popup}>
-          <Contact />
+          <Contact toggleContact={this.toggleContact} />
         </Popup>
       </div>
     );
