@@ -1,7 +1,7 @@
 ---
 title: "Unicorn Echo Park"
 date: 2017-10-11
-description: 
+description: ""
 image: "../../images/placeholder-10.jpg"
 author: Thomas Vaeth
 tags: 

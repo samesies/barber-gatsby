@@ -1,7 +1,7 @@
 ---
 title: "Lumbersexual"
 date: 2017-10-09
-description: 
+description: ""
 image: "../../images/placeholder-3.jpg"
 author: Thomas Vaeth
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Taxidermy Dreamcatcher Readymade"
 date: 2017-10-17
-description: 
+description: ""
 image: "../../images/placeholder-6.jpg"
 author: Thomas Vaeth
 tags: 

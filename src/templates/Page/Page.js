@@ -2,11 +2,9 @@
 // Imports
 // ----------------------------------------------
 import React, { Component } from 'react';
-import Helmet from 'react-helmet';
-import { graphql } from 'gatsby';
-import get from 'lodash/get';
 
 import DefaultLayout from '../Default';
+import SEO from '../../components/SEO';
 import Title from '../../components/Title/Title';
 
 import styles from './Page.module.scss';
@@ -16,13 +14,13 @@ import styles from './Page.module.scss';
 // ----------------------------------------------
 export default class PageLayout extends Component {
   render() {
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title');
-
     return (
       <DefaultLayout>
-        <Helmet
-          title={`${this.props.title} | ${siteTitle}`}
-        />
+        <SEO
+          title={this.props.title}
+          description={this.props.description}
+          image={this.props.featuredImage}
+          pathname={this.props.pathname} />
         <section>
           <div>
             <Title title={this.props.title} />
@@ -50,14 +48,4 @@ export default class PageLayout extends Component {
       </DefaultLayout>
     );
   }
-};
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
+}

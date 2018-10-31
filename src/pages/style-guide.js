@@ -11,7 +11,11 @@ import featuredImage from '../images/placeholder-18.jpg';
 // Style Guide
 // ----------------------------------------------
 export default () => (
-  <PageLayout title="Style Guide" featuredImage={featuredImage}>
+  <PageLayout 
+    title="Style Guide" 
+    description=""
+    featuredImage={featuredImage}
+    pathname="/style-guide">
     <p>My name is Thomas Vaeth and this is Barber. <span role="img" aria-label="barber">💈</span> Barber is a minimal blog theme with a masonry grid layout and infinite scroll. <a href="http://samesies.io" target="_blank" rel="noopener noreferrer">Samesies</a> builds themes for Ghost, WordPress, and Jekyll and they are only available through ThemeForest.</p>
 
     <hr/>

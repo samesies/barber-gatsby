@@ -1,7 +1,7 @@
 ---
 title: "Waistcoat Tote Bag Pickled"
 date: 2017-10-19
-description: 
+description: ""
 image: "../../images/placeholder-4.jpg"
 author: Thomas Vaeth
 tags: 

@@ -1,7 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: 'The Barber Theme',
-    description: 'Barber is a blog theme for Gatsby built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.'
+    titleTemplate: '%s | The Barber Theme',
+    description: 'Barber is a blog theme for Gatsby built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.',
+    url: 'http://barber.samesies.io',
+    image: '/images/seo.jpg',
+    twitterUsername: '@thomasvaeth'
   },
   plugins: [
     'gatsby-plugin-page-transitions',

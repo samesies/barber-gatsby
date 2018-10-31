@@ -1,7 +1,7 @@
 ---
 title: "Beard"
 date: 2017-10-16
-description: 
+description: ""
 image: "../../images/placeholder-7.jpg"
 author: Thomas Vaeth
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: "Blue Bottle"
 date: 2017-10-18
-description: 
+description: ""
 image: "../../images/placeholder-5.jpg"
 author: Thomas Vaeth
 tags: 

@@ -2,11 +2,10 @@
 // Imports
 // ----------------------------------------------
 import React, { Component } from 'react';
-import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
-import get from 'lodash/get';
 
 import DefaultLayout from '../Default';
+import SEO from '../../components/SEO';
 import Title from '../../components/Title/Title';
 
 import styles from './Post.module.scss';
@@ -17,15 +16,15 @@ import styles from './Post.module.scss';
 export default class PostLayout extends Component {
   render() {
     const post = this.props.data.markdownRemark;
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title');
-    const siteDescription = post.excerpt;
 
     return (
       <DefaultLayout location={this.props.location}>
-        <Helmet
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={`${post.frontmatter.title} | ${siteTitle}`}
-        />
+        <SEO
+          title={post.frontmatter.title}
+          description={post.frontmatter.description}
+          image={post.frontmatter.image.publicURL}
+          pathname={post.fields.slug}
+          article />
         <div className={styles.post}>
           <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
             <Title title={post.frontmatter.title} date={post.frontmatter.date}/>
@@ -50,20 +49,19 @@ export default class PostLayout extends Component {
 
 export const pageQuery = graphql`
   query PostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       excerpt
       html
       frontmatter {
         title
+        description
         date(formatString: "DD MMM YYYY")
         image {
           publicURL
         }
+      }
+      fields {
+        slug
       }
     }
   }

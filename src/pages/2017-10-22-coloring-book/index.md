@@ -1,7 +1,7 @@
 ---
 title: "Coloring Book"
 date: 2017-10-22
-description: 
+description: ""
 image: "../../images/placeholder-8.jpg"
 author: Thomas Vaeth
 tags: 

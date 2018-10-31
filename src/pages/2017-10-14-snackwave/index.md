@@ -1,7 +1,7 @@
 ---
 title: "Snackwave"
 date: 2017-10-14
-description: 
+description: ""
 image: "../../images/placeholder-11.jpg"
 author: Thomas Vaeth
 tags: 

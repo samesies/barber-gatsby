@@ -1,7 +1,7 @@
 ---
 title: "Butcher Vaporware Keytar"
 date: 2017-10-12
-description: 
+description: ""
 image: "../../images/placeholder-13.jpg"
 author: Thomas Vaeth
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: "Brunch Swag"
 date: 2017-10-08
-description: 
+description: ""
 image: "../../images/placeholder-15.jpg"
 author: Thomas Vaeth
 tags:
