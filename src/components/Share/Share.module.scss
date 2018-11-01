@@ -1,0 +1,34 @@
+//----------------------------------------------
+// Imports
+//---------------------------------------------- 
+@import '../../styles/tools/_config';
+@import '../../styles/tools/_extends';
+
+//----------------------------------------------
+// Share
+//---------------------------------------------- 
+.share {
+  @extend %flex-center;
+  @extend %no-list-style;
+
+  margin-top: 2em;
+
+  @media (min-width: $mq-med) {
+    margin-top: 3em;
+  }
+
+  @media (min-width: $mq-xlarge) {
+    margin-top: 4em;
+  }
+
+  & > * {
+    &:not(:last-child) {
+      margin-right: 0.75em;
+    }
+  }
+
+  a {
+    font-size: 1.1em;
+    color: $color-darkgrey;
+  }
+}

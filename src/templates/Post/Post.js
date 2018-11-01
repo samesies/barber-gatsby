@@ -7,6 +7,7 @@ import { graphql } from 'gatsby';
 import DefaultLayout from '../Default';
 import SEO from '../../components/SEO';
 import Title from '../../components/Title/Title';
+import Share from '../../components/Share/Share';
 import Author from '../../components/Author/Author';
 
 import styles from './Post.module.scss';
@@ -17,8 +18,6 @@ import styles from './Post.module.scss';
 export default class PostLayout extends Component {
   render() {
     const post = this.props.data.markdownRemark;
-
-    console.log(post);
 
     return (
       <DefaultLayout location={this.props.location}>
@@ -41,10 +40,20 @@ export default class PostLayout extends Component {
             <div className={`${styles.post__content} section-padding`}>
               <div className="grid">
                 <div className={styles.post__markdown} itemProp="articleBody" dangerouslySetInnerHTML={{ __html: post.html }} />
+
+                <Share 
+                  url={`${this.props.data.site.siteMetadata.url}${post.fields.slug}`} 
+                  title={post.frontmatter.title}
+                  description={post.frontmatter.description}
+                  autor={post.frontmatter.author.id}
+                  image={post.frontmatter.image.publicURL} />
               </div>
             </div>
 
-            <Author author={post.frontmatter.author.id} bio={post.frontmatter.author.bio} url={post.frontmatter.author.url} />
+            <Author 
+              author={post.frontmatter.author.id} 
+              bio={post.frontmatter.author.bio} 
+              url={post.frontmatter.author.url} />
           </article>
         </div> 
       </DefaultLayout>
@@ -53,7 +62,12 @@ export default class PostLayout extends Component {
 }
 
 export const pageQuery = graphql`
-  query PostBySlug($slug: String!) {
+  query BlogPostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        url
+      }
+    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       excerpt
       html

@@ -203,36 +203,6 @@
     }
   }
 
-  // &__social {
-  //   @extend %flex-center;
-  //   @extend %no-list-style;
-
-  //   margin: {
-  //     top: 2em;
-  //     bottom: 0;
-  //     left: 0;
-  //   }
-
-  //   @media (min-width: $mq-med) {
-  //     margin-top: 3em;
-  //   }
-
-  //   @media (min-width: $mq-xlarge) {
-  //     margin-top: 4em;
-  //   }
-
-  //   & > * {
-  //     &:not(:last-child) {
-  //       margin-right: 0.75em;
-  //     }
-  //   }
-
-  //   a {
-  //     font-size: 1.1em;
-  //     color: $color-darkgrey;
-  //   }
-  // }
-
   // &__comments {
   //   border-top: $border;
   // }
