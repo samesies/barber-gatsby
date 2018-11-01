@@ -7,6 +7,7 @@ import { graphql } from 'gatsby';
 import DefaultLayout from '../Default';
 import SEO from '../../components/SEO';
 import Title from '../../components/Title/Title';
+import Author from '../../components/Author/Author';
 
 import styles from './Post.module.scss';
 
@@ -16,6 +17,8 @@ import styles from './Post.module.scss';
 export default class PostLayout extends Component {
   render() {
     const post = this.props.data.markdownRemark;
+
+    console.log(post);
 
     return (
       <DefaultLayout location={this.props.location}>
@@ -40,6 +43,8 @@ export default class PostLayout extends Component {
                 <div className={styles.post__markdown} itemProp="articleBody" dangerouslySetInnerHTML={{ __html: post.html }} />
               </div>
             </div>
+
+            <Author author={post.frontmatter.author.id} bio={post.frontmatter.author.bio} url={post.frontmatter.author.url} />
           </article>
         </div> 
       </DefaultLayout>
@@ -58,6 +63,11 @@ export const pageQuery = graphql`
         date(formatString: "DD MMM YYYY")
         image {
           publicURL
+        }
+        author {
+          id
+          bio
+          url
         }
       }
       fields {

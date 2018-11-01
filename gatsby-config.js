@@ -7,12 +7,16 @@ module.exports = {
     image: '/images/seo.jpg',
     twitterUsername: '@thomasvaeth'
   },
+  mapping: {
+    'MarkdownRemark.frontmatter.author': 'AuthorYaml',
+  },
   plugins: [
     'gatsby-plugin-page-transitions',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-transformer-yaml',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -51,8 +55,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'the-barber-theme',
+        short_name: 'barber',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#663399',

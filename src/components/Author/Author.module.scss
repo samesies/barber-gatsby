@@ -1,0 +1,32 @@
+//----------------------------------------------
+// Imports
+//---------------------------------------------- 
+@import '../../styles/tools/_config';
+@import '../../styles/tools/_extends-type';
+
+//----------------------------------------------
+// Author
+//---------------------------------------------- 
+.author {
+  @extend %font-header;
+  @extend %font-size;
+
+  display: block;
+
+  a {
+    color: $color-black;
+    transition: color 200ms ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: darken($color-black, 5);
+    }
+  }
+
+  &__bio {
+    @extend %font-size;
+
+    margin-bottom: 0;
+  }
+}
