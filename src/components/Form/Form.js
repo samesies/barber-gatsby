@@ -2,6 +2,7 @@
 // Imports
 // ----------------------------------------------
 import React, { Component } from 'react';
+import axios from 'axios';
 
 import styles from './Form.module.scss';
 
@@ -27,21 +28,19 @@ export default class Form extends Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    fetch('https://formcarry.com/s/HkIo0nMb7', {
-      method: 'POST',
-      body: JSON.stringify(this.state),
+    axios.post('https://formcarry.com/s/HkIo0nMb7', this.state, {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
-      },
-    }).then(response => response.json()).then(json => {
-      if (json.code === 200) {
+      }
+    }).then(response => {
+      if (response.status === 200) {
         this.setState({});
       } else {
         this.setState({ error: 'Something Went Wrong' });
-        console.error(json.meta.error_message);
       }
-    }).catch(error => {
+    })
+    .catch(error => {
       this.setState({ error: 'Something Went Wrong' });
       console.error(error);
     });
