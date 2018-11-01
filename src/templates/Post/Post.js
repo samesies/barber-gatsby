@@ -45,7 +45,7 @@ export default class PostLayout extends Component {
                   url={`${this.props.data.site.siteMetadata.url}${post.fields.slug}`} 
                   title={post.frontmatter.title}
                   description={post.frontmatter.description}
-                  autor={post.frontmatter.author.id}
+                  author={post.frontmatter.author.id}
                   image={post.frontmatter.image.publicURL} />
               </div>
             </div>
