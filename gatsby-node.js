@@ -5,6 +5,9 @@ const { createFilePath } = require('gatsby-source-filesystem');
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
+  const postTemplate = path.resolve('./src/templates/Post/Post.js');
+  const tagTemplate = path.resolve('./src/templates/Tag.js');
+
   return new Promise((resolve, reject) => {
     resolve(
       graphql(
@@ -15,6 +18,9 @@ exports.createPages = ({ graphql, actions }) => {
                 node {
                   fields {
                     slug
+                  }
+                  frontmatter {
+                    tags
                   }
                 }
               }
@@ -27,12 +33,35 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors);
         }
 
-        result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        const posts = result.data.allMarkdownRemark.edges;
+
+        // Posts
+        posts.forEach(({ node }) => {
           createPage({
             path: node.fields.slug,
-            component: path.resolve('./src/templates/Post/Post.js'),
+            component: postTemplate,
             context: {
               slug: node.fields.slug
+            }
+          });
+        });
+
+        // Tags
+        let tags = [];
+
+        posts.forEach(edge => {
+          if (edge.node.frontmatter.tags) {
+            tags = tags.concat(edge.node.frontmatter.tags);
+          }
+        });
+        tags = [...new Set(tags)];
+
+        tags.forEach(tag => {
+          createPage({
+            path: `/tag/${tag.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\s+/g, '-').toLowerCase()}/`,
+            component: tagTemplate,
+            context: {
+              tag
             }
           });
         });

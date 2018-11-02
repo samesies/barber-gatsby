@@ -4,10 +4,7 @@ date: 2018-10-15
 description: ""
 image: "../../../../images/placeholder-16.jpg"
 author: Thomas Vaeth
-tags: 
-  - Mixtape
-  - Moon Drinking
-  - Kale
+tags: ["Mixtape", "Moon Drinking", "Kale"]
 ---
 Cred artisan post-ironic ramps chillwave. Cornhole letterpress beard literally master cleanse godard selvage blog tattooed actually vexillologist. Fingerstache tousled DIY +1. 
 

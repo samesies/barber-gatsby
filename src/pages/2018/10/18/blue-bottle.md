@@ -4,10 +4,7 @@ date: 2018-10-18
 description: ""
 image: "../../../../images/placeholder-5.jpg"
 author: Thomas Vaeth
-tags: 
-  - Squid
-  - Moon Drinking
-  - Kale
+tags: ["Squid", "Moon Drinking", "Kale"]
 ---
 # Bicycle Rights
 Subway tile iPhone hot chicken, pour-over kale chips synth godard distillery man braid forage raclette blue bottle. Ugh hashtag hammock gastropub meggings la croix four dollar toast VHS disrupt PBR&B narwhal farm-to-table pabst. Kinfolk brooklyn viral tilde humblebrag bicycle rights. 

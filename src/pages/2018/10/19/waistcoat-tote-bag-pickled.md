@@ -4,10 +4,7 @@ date: 2018-10-19
 description: ""
 image: "../../../../images/placeholder-4.jpg"
 author: Thomas Vaeth
-tags: 
-  - Dummy Text
-  - Moon Drinking
-  - Kale
+tags: ["Dummy Text", "Moon Drinking", "Kale"]
 ---
 You probably haven't heard of them pug wayfarers pork belly ennui ramps yuccie seitan hexagon mumblecore PBR&B banjo readymade. Fixie post-ironic ennui, freegan blog kale chips bitters tote bag polaroid jean shorts. 
 

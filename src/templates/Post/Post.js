@@ -29,7 +29,7 @@ export default class PostLayout extends Component {
           article />
         <div className={styles.post}>
           <article itemProp="blogPost" itemScope itemType="http://schema.org/BlogPosting">
-            <Title title={post.frontmatter.title} date={post.frontmatter.date}/>
+            <Title title={post.frontmatter.title} date={post.frontmatter.date} />
 
             <div className={styles.post__img}>
               <div>

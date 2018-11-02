@@ -4,10 +4,7 @@ date: 2018-10-17
 description: ""
 image: "../../../../images/placeholder-6.jpg"
 author: Thomas Vaeth
-tags: 
-  - Dummy Text
-  - Moon Drinking
-  - Kale
+tags: ["Dummy Text", "Moon Drinking", "Kale"]
 ---
 Hammock drinking vinegar readymade roof party, portland small batch occupy freegan biodiesel XOXO retro gastropub trust fund. Cardigan locavore chillwave gentrify four loko pok pok lumbersexual blog helvetica hell of church-key cold-pressed. Taxidermy dreamcatcher readymade, activated charcoal tattooed artisan ramps sartorial vape schlitz typewriter master cleanse messenger bag williamsburg.
 

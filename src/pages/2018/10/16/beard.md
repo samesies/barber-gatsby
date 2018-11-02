@@ -4,10 +4,7 @@ date: 2018-10-16
 description: ""
 image: "../../../../images/placeholder-7.jpg"
 author: Thomas Vaeth
-tags: 
-  - Squid
-  - Moon Drinking
-  - Kale
+tags: ["Squid", "Moon Drinking", "Kale"]
 ---
 Mlkshk cronut try-hard, microdosing poke man bun kinfolk normcore intelligentsia YOLO helvetica. Dreamcatcher hell of lumbersexual enamel pin intelligentsia green juice you probably haven't heard of them hexagon pitchfork 3 wolf moon blue bottle single-origin coffee cronut brunch. 
 
