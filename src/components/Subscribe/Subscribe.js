@@ -60,11 +60,11 @@ export default class Subscribe extends Component {
           >
             <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
               <input 
-              type="text" 
-              name="b_66ddf555dab480e6a8606430b_89b3ee034f" 
-              tabIndex="-1" 
-              value="" 
-              readOnly />
+                type="text" 
+                name="b_66ddf555dab480e6a8606430b_89b3ee034f" 
+                tabIndex="-1" 
+                value="" 
+                readOnly />
             </div>
 
             <div className={styles.subscribe__input}>

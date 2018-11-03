@@ -26,7 +26,7 @@ export default class PostLayout extends Component {
     };
 
     return (
-      <DefaultLayout location={this.props.location}>
+      <DefaultLayout>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description}

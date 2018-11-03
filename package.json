@@ -5,7 +5,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop"
+    "develop": "gatsby develop",
+    "lint": "eslint --ext .js src"
   },
   "author": {
     "name": "Samesies",
@@ -49,5 +50,11 @@
     "react-helmet": "^5.2.0",
     "react-masonry-component": "^6.2.1",
     "to-querystring": "^1.0.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-config-eslint": "^5.0.1",
+    "eslint-plugin-react": "^7.11.1"
   }
 }

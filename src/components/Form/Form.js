@@ -39,8 +39,7 @@ export default class Form extends Component {
       } else {
         this.setState({ error: 'Something Went Wrong' });
       }
-    })
-    .catch(error => {
+    }).catch(error => {
       this.setState({ error: 'Something Went Wrong' });
       console.error(error);
     });

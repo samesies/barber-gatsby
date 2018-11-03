@@ -48,9 +48,9 @@ const SEO = ({
             <title>{title ? `${title} | ${defaultTitle}` : defaultTitle}</title>
             <meta name="description" content={seo.description} />
 
-            <meta itemprop="name" content={defaultTitle} />
-            <meta itemprop="description" content={seo.description} />
-            <meta itemprop="image" content={seo.image} />
+            <meta itemProp="name" content={defaultTitle} />
+            <meta itemProp="description" content={seo.description} />
+            <meta itemProp="image" content={seo.image} />
 
             <meta property="og:url" content={seo.url} />
             <meta property="og:type" content={article ? 'article' : 'website'} />
