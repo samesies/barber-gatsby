@@ -20,12 +20,14 @@ export default class Popup extends Component {
   componentDidMount() {
     document.addEventListener('keyup', event => {
       if (this.state.popup && event.which === 27) {
-        this.togglePopup(event);
+        this.togglePopup();
       }
     });
   }
 
-  togglePopup(event) {
+  togglePopup() {
+    document.body.classList.toggle('overflow-hidden');
+
     this.setState(prevState => ({
       popup: !prevState.popup
     }));
@@ -33,7 +35,7 @@ export default class Popup extends Component {
 
   render() {
     return (
-      <section className={`${styles.popup} ${this.state.popup ? styles.popup__opening : ''}`} onClick={e => this.togglePopup(e)}>
+      <section className={`${styles.popup} ${this.state.popup ? styles.popup__opening : ''}`} onClick={this.togglePopup}>
         <div className={styles.popup__close}>
           <div className={styles.popup__exit} />
         </div>

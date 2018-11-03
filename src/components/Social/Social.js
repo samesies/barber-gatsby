@@ -17,7 +17,7 @@ export default () => (
       <a href="https://www.instagram.com/thomas.vaeth/" target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram"></i></a>
     </li>
     <li>
-      <a href="https://www.aedin.com/in/thomasvaeth/" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin"></i></a>
+      <a href="https://www.linkedin.com/in/thomasvaeth/" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin"></i></a>
     </li>
     <li>
       <a href="https://github.com/samesies" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a>

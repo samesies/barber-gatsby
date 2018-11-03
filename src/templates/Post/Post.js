@@ -3,6 +3,7 @@
 // ----------------------------------------------
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
+import { DiscussionEmbed } from 'disqus-react';
 
 import DefaultLayout from '../Default';
 import SEO from '../../components/SEO';
@@ -18,6 +19,11 @@ import styles from './Post.module.scss';
 export default class PostLayout extends Component {
   render() {
     const post = this.props.data.markdownRemark;
+    const disqusShortname = this.props.data.site.siteMetadata.disqusShortname;
+    const disqusConfig = {
+      identifier: post.fields.slug,
+      title: post.frontmatter.title,
+    };
 
     return (
       <DefaultLayout location={this.props.location}>
@@ -54,6 +60,17 @@ export default class PostLayout extends Component {
               author={post.frontmatter.author.id} 
               bio={post.frontmatter.author.bio} 
               url={post.frontmatter.author.url} />
+
+            {
+            disqusShortname ? 
+              <div className={`${styles.post__comments} section-padding`}>
+                <div className="grid-small">
+                  <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+                </div>
+              </div>
+            :
+              ''
+            }
           </article>
         </div> 
       </DefaultLayout>
@@ -66,6 +83,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         url
+        disqusShortname
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
