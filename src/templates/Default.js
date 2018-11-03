@@ -22,7 +22,14 @@ const DefaultLayout = ({ children }) => (
         site {
           siteMetadata {
             title
-            description
+          }
+        }
+        allMarkdownRemark(
+          limit: 2000
+        ) {
+          group(field: frontmatter___tags) {
+            fieldValue
+            totalCount
           }
         }
       }
@@ -42,7 +49,7 @@ const DefaultLayout = ({ children }) => (
           <main className="💈">
             {children}
           </main>
-          <Footer />
+          <Footer tags={data.allMarkdownRemark.group} />
         </PageTransition>
       </>
     )}
