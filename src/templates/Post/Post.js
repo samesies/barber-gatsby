@@ -57,7 +57,7 @@ export default class PostLayout extends Component {
           </article>
         </div> 
       </DefaultLayout>
-    )
+    );
   }
 }
 

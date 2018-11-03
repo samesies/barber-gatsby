@@ -45,7 +45,7 @@ export default class TagLayout extends Component {
           onClick={this.onClick} 
           loadMore={posts.length < this.posts.length} />
       </DefaultLayout>
-    )
+    );
   }
 }
 
