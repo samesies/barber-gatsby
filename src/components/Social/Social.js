@@ -10,35 +10,35 @@ import styles from './Social.module.scss';
 // Social
 // ----------------------------------------------
 export default () => (
-  <StaticQuery
-    query={graphql`
-      query SocialMediaQuery {
-        site {
-          siteMetadata {
-            socialMedia {
-              name
-              url
+  <ul className={styles.social}>
+    <StaticQuery
+      query={graphql`
+        query SocialMediaQuery {
+          site {
+            siteMetadata {
+              socialMedia {
+                name
+                url
+              }
             }
           }
         }
-      }
-    `}
-    render={data => {
-      const social = data.site.siteMetadata.socialMedia;
+      `}
+      render={data => {
+        const social = data.site.siteMetadata.socialMedia;
 
-      return (
-        <>
-          <ul className={styles.social}>
-          {social.map(item => (
-            <li>
-              <a href={item.url} target="_blank" rel="noopener noreferrer">
-                <i className={`fa fa-${item.name}`} />
-              </a>
-            </li>
-          ))}
-          </ul>
-        </>
-      );
-    }}
-  />
+        return (
+          <>
+            {social.map(item => (
+              <li key={item.name}>
+                <a href={item.url} target="_blank" rel="noopener noreferrer">
+                  <i className={`fa fa-${item.name}`} />
+                </a>
+              </li>
+            ))}
+          </>
+        );
+      }}
+    />
+  </ul>
 );
