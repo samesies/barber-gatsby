@@ -4,7 +4,7 @@
 import React, { Component } from 'react';
 import { navigate } from 'gatsby';
 import jsonp from 'jsonp';
-import toQueryString from 'to-querystring';
+import querystring from 'querystring';
 
 import styles from './Subscribe.module.scss';
 
@@ -15,8 +15,9 @@ export default class Subscribe extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { 'b_66ddf555dab480e6a8606430b_89b3ee034f': '' };
+    this.state = {};
 
+    this.mailchimp = {'b_66ddf555dab480e6a8606430b_89b3ee034f': ''};
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -33,7 +34,7 @@ export default class Subscribe extends Component {
     this.setState({ error: '' });
 
     const url = 'https://samesies.us17.list-manage.com/subscribe/post?u=66ddf555dab480e6a8606430b&amp;id=89b3ee034f'.replace('/post?', '/post-json?');
-    const params = toQueryString(this.state);
+    const params = querystring.stringify({...this.state, ...this.mailchimp});
 
     jsonp(`${url}&${params}`, { param: 'c' }, (error, data) => {
       if (data.result === 'success') {
@@ -58,15 +59,6 @@ export default class Subscribe extends Component {
             noValidate
             onSubmit={this.handleSubmit}
           >
-            <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-              <input 
-                type="text" 
-                name="b_66ddf555dab480e6a8606430b_89b3ee034f" 
-                tabIndex="-1" 
-                value="" 
-                readOnly />
-            </div>
-
             <div className={styles.subscribe__input}>
               <input 
                 id="mce-EMAIL" 
