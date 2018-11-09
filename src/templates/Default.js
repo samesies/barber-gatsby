@@ -18,15 +18,13 @@ import '../styles/app.scss';
 const DefaultLayout = ({ children }) => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
+      query HeaderAndFooterQuery {
         site {
           siteMetadata {
             title
           }
         }
-        allMarkdownRemark(
-          limit: 2000
-        ) {
+        allMarkdownRemark(limit: 2000) {
           group(field: frontmatter___tags) {
             fieldValue
             totalCount
@@ -38,19 +36,10 @@ const DefaultLayout = ({ children }) => (
       <>
         <SEO />
         <Header siteTitle={data.site.siteMetadata.title} />
-        <PageTransition
-          transitionStyles={{
-            entering: { opacity: 0 },
-            entered: { opacity: 1 },
-            exiting: { opacity: 0 }
-          }}
-          transitionTime={600}
-        >
-          <main className="💈">
-            {children}
-          </main>
-          <Footer tags={data.allMarkdownRemark.group} />
-        </PageTransition>
+        <main className="💈">
+          {children}
+        </main>
+        <Footer tags={data.allMarkdownRemark.group} />
       </>
     )}
   />

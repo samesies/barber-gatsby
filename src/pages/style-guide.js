@@ -85,7 +85,7 @@ export default () => (
     <hr/>
 
     <div className="flex-vid">
-      <iframe height="400" scrolling="no" title="Flexbox Flex-Grow Mast" src="//codepen.io/thomasvaeth/embed/qmbKVq/?height=265&theme-id=0&default-tab=result&embed-version=2" frameBorder="no" allowTransparency="true" allowFullScreen style={{ width: '100%' }} />
+      <iframe height="400" scrolling="no" title="Flexbox Flex-Grow Mast" src="//codepen.io/thomasvaeth/embed/qmbKVq/?height=265&theme-id=0&default-tab=result&embed-version=2" frameBorder="no" allowFullScreen style={{ width: '100%' }} />
     </div>
 
     <hr/>

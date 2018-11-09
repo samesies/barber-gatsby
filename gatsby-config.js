@@ -11,12 +11,17 @@ module.exports = {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
   },
   plugins: [
-    'gatsby-plugin-page-transitions',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-transformer-yaml',
+    {
+      resolve: 'gatsby-plugin-layout',
+      options: {
+        component: require.resolve('./src/templates/Default.js')
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

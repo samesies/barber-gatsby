@@ -4,7 +4,6 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 
-import DefaultLayout from './Default';
 import SEO from '../components/SEO';
 import Title from '../components/Title/Title';
 import Posts from '../components/Posts/Posts';
@@ -34,7 +33,7 @@ export default class TagLayout extends Component {
     const posts = this.posts.slice(0, this.state.postsLoaded);
 
     return (
-      <DefaultLayout>
+      <div>
         <SEO
           title={this.props.pageContext.tag} 
           pathname={this.props.pageResources.page.path} />
@@ -44,13 +43,13 @@ export default class TagLayout extends Component {
           posts={posts} 
           onClick={this.onClick} 
           loadMore={posts.length < this.posts.length} />
-      </DefaultLayout>
+      </div>
     );
   }
 }
 
 export const pageQuery = graphql`
-  query($tag: String) {
+  query BlogPostsByTag($tag: String) {
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }

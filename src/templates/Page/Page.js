@@ -3,7 +3,6 @@
 // ----------------------------------------------
 import React from 'react';
 
-import DefaultLayout from '../Default';
 import SEO from '../../components/SEO';
 import Title from '../../components/Title/Title';
 
@@ -13,7 +12,7 @@ import styles from './Page.module.scss';
 // Page Layout
 // ----------------------------------------------
 export default props => (
-  <DefaultLayout>
+  <div>
     <SEO
       title={props.title}
       description={props.description}
@@ -43,5 +42,5 @@ export default props => (
         </div>
       </div>
     </section>
-  </DefaultLayout>
+  </div>
 );

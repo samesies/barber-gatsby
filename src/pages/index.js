@@ -32,12 +32,10 @@ export default class IndexPage extends Component {
     const posts = this.posts.slice(0, this.state.postsLoaded);
 
     return (
-      <DefaultLayout>
-        <Posts 
-          posts={posts} 
-          onClick={this.onClick} 
-          loadMore={posts.length < this.posts.length} />
-      </DefaultLayout>
+      <Posts 
+        posts={posts} 
+        onClick={this.onClick} 
+        loadMore={posts.length < this.posts.length} />
     );
   }
 }

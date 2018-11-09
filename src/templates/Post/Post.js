@@ -5,7 +5,6 @@ import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
 
-import DefaultLayout from '../Default';
 import SEO from '../../components/SEO';
 import Title from '../../components/Title/Title';
 import Share from '../../components/Share/Share';
@@ -26,7 +25,7 @@ export default class PostLayout extends Component {
     };
 
     return (
-      <DefaultLayout>
+      <div>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description}
@@ -73,7 +72,7 @@ export default class PostLayout extends Component {
             }
           </article>
         </div> 
-      </DefaultLayout>
+      </div>
     );
   }
 }
