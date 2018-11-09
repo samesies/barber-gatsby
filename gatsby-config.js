@@ -5,7 +5,29 @@ module.exports = {
     url: 'http://barber.samesies.io',
     image: '/images/seo.jpg',
     twitterUsername: '@thomasvaeth',
-    disqusShortname: 'test-apkdzgmqhj'
+    disqusShortname: 'test-apkdzgmqhj',
+    socialMedia: [
+      {
+        name: 'twitter',
+        url: 'https://twitter.com/thomasvaeth'
+      },
+      {
+        name: 'instagram',
+        url: 'https://www.instagram.com/thomas.vaeth/'
+      },
+      {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/thomasvaeth/'
+      },
+      {
+        name: 'github',
+        url: 'https://github.com/samesies'
+      },
+      {
+        name: 'codepen',
+        url: 'https://codepen.io/thomasvaeth/'
+      }
+    ]
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
