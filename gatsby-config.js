@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-layout',
       options: {
-        component: require.resolve('./src/templates/Default.js')
+        component: `${__dirname}/src/templates/Default.js`
       }
     },
     {
