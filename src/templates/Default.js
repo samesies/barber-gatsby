@@ -4,7 +4,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
-import PageTransition from 'gatsby-plugin-page-transitions';
 
 import Transition from '../components/Transition';
 import SEO from '../components/SEO';
