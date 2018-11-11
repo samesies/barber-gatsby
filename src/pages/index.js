@@ -4,7 +4,6 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 
-import DefaultLayout from '../templates/Default';
 import Posts from '../components/Posts/Posts';
 
 // ----------------------------------------------
