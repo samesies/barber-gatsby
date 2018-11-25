@@ -21,7 +21,7 @@ export default class PostLayout extends Component {
     const disqusShortname = this.props.data.site.siteMetadata.disqusShortname;
     const disqusConfig = {
       identifier: post.fields.slug,
-      title: post.frontmatter.title,
+      title: post.frontmatter.title
     };
 
     return (

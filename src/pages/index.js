@@ -13,9 +13,7 @@ export default class IndexPage extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      postsLoaded: 12
-    };
+    this.state = { postsLoaded: 12 };
 
     this.onClick = this.onClick.bind(this);
     this.posts = this.props.data.allMarkdownRemark.edges;

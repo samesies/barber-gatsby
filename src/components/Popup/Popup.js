@@ -27,6 +27,15 @@ export default class Popup extends Component {
 
   togglePopup() {
     document.body.classList.toggle('overflow-hidden');
+    this.popup.classList.toggle(styles.popup__opening);
+
+    if (this.state.popup) {
+      this.popup.classList.add(styles.popup__closing);
+      
+      setTimeout(() => {
+        this.popup.classList.remove(styles.popup__closing);
+      }, 800);
+    }
 
     this.setState(prevState => ({
       popup: !prevState.popup
@@ -35,7 +44,11 @@ export default class Popup extends Component {
 
   render() {
     return (
-      <section className={`${styles.popup} ${this.state.popup ? styles.popup__opening : ''}`} onClick={this.togglePopup}>
+      <section 
+        className={styles.popup} 
+        onClick={this.togglePopup}
+        ref={popup => this.popup = popup}
+      >
         <div className={styles.popup__close}>
           <div className={styles.popup__exit} />
         </div>
